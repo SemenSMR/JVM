@@ -7,7 +7,7 @@ public class Main {
         Object o = new Object();        // создается в куче, так как это экземпляр класса , позже очищается сборщиком мусора
         Integer ii = 2;                 // создаются в куче так как примитив , позже очищается сборщиком мусора
         printAll(o, i, ii);             // создается фрейм стека для этого метода
-        System.out.println("finished"); // 7
+        System.out.println("finished"); // Этот аргумент будет временно храниться в локальных переменных фрейма стека во время выполнения метода.
     }
 
     private static void printAll(Object o, int i, Integer ii) {
